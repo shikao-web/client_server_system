@@ -1,3 +1,5 @@
+console.log("準備完了(script.js)")
+
 document.getElementById("contactForm").addEventListener("submit", function (e) {
     e.preventDefault(); // ページリロード防止
 
