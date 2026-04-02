@@ -2,7 +2,6 @@ console.log("準備完了(script.js)")
 
 document.getElementById("contactForm").addEventListener("submit", function (e) {
     e.preventDefault(); // ページリロード防止
-    console.log("送信された");
 
 
     const name = document.getElementById("name").value;
@@ -27,6 +26,6 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     document.getElementById("result").textContent = "送信しました！";
 
     // フォームリセット
-    document.getElementById("contactForm").reset();
+    document.getElementById("contactForm").classList.add("hidden");
 
 });
