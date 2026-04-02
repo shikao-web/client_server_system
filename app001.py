@@ -6,7 +6,7 @@ DOCUMENT_ROOT_DIR = "./www"
 class StaticFileHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         # URL → ファイルパス変換
-        path = self.path.strip("/*")
+        path = self.path.strip("/")
         if path == "":
             path = "index.html"
 
