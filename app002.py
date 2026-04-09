@@ -65,6 +65,8 @@ class StaticFileHandler(BaseHTTPRequestHandler):
                 if (not os.path.isfile(CSV_FILE_PATH)) or os.path.getsize(CSV_FILE_PATH) == 0:
                     writer.writeheader()
                 writer.writerow(data)
+
+                print(data, "をCSVに書き込みました。\n")
         else: 
             self.send_response(405)
         
